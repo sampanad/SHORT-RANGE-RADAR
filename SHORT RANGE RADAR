@@ -1,0 +1,23 @@
+Short Range Radar System is a perfect integration of pure physics, applied electronics, and programming. 
+________________________________________
+1. Project Abstract
+This project, an Ultrasonic Radar System (or Sweeping Sonar), is designed to detect and map the location of objects within a specific radial area. The system utilizes the Time-of-Flight (ToF) sensing method, a core principle of acoustics, by employing an HC-SR04 ultrasonic sensor to measure the distance to an object. This sensor is mounted on a Servo Motor which rotates, allowing the system to sweep a 180-degree field of view. An Arduino Uno acts as the central control unit, managing the angular movement, performing high-speed ToF calculations, and transmitting the resulting ( Distance) data serially to a connected computer. The expected outcome is the real-time visualization of the surrounding environment displayed on computer.
+________________________________________
+2. Scientific Category Justification (Pure Science/Physics Focus) 
+This project is fundamentally categorized as Pure Science, specifically within Physics, because its operational principle is entirely dependent on the natural laws governing sound waves.
+( Natural laws governing sound waves include reflection (angle of incidence equals angle of reflection), refraction (bending when passing into a new medium), diffraction (spreading around obstacles), interference (combining of waves), and the relationship between frequency, wavelength, and velocity (𝑣=𝑓𝜆)
+Acoustics and Wave Mechanics
+The core of the system lies in Acoustics, the branch of physics that studies sound, ultrasound, and infrasound.
+•	Sound Wave Travel: The sensor generates a mechanical wave (ultrasound, which is sound at frequencies beyond human hearing), which travels through the air at the Speed of Sound which is 343m/s.
+•	Reflection: When this wave encounters an obstacle, it reflects (or echoes) back to the source, following the law of reflection. This behavior is a key concept of Wave Mechanics.
+•	The entire system relies on the fact that sound waves travel at a known, relatively constant speed, allo
+ 
+The Time-of-Flight (ToF) Principle :
+The Time-of-Flight (ToF) principle is the scientific foundation for distance measurement. It is the method of determining distance by measuring the time it takes for a signal (in this case, an ultrasonic sound pulse) to travel to a target and return to the sender.
+Distance = velocity of sound wave * time 
+The specific formula used in the project is:
+Distance = (velocity of sound wave * time ) /2
+
+•	Explanation of Division by Two: The measured time ($t_{\text{measured}}$) is the total time the pulse takes to travel from the sensor to the object and back to the sensor. Therefore, the actual one-way distance is calculated by using only half of the total measured time, which is mathematically achieved by dividing the full distance result by two.
+________________________________________
+
